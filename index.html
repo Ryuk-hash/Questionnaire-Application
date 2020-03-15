@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Questionnaire Application</title>
+
+   <!-- LINKS -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="style.css">
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <!-- LINKS END -->
+
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="col s12 m7">
+         <h2 class="header center white-text">~ Questionnaire App ~</h2>
+         <div id="quiz">
+            <div class="card horizontal z-depth-3 active">
+               <div class="card-stacked">
+                  <div class="card-action">
+                     <span class="card-title">Question</span>
+                     <div class="secondary-content">
+                        <div class="next-button">
+                           <a class="btn blue white-text waves-effect waves-light pulse">Next
+                              <i class="material-icons right">
+                                 send
+                              </i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="divider"></div>
+
+
+                  <div class="card-content">
+                     <p id="question"></p>
+                  </div>
+
+                  <div class="form">
+                     <form action="#" class="card-content">
+                        <p>
+                           <label>
+                              <input class="with-gap" name="group1" type="radio" value='option1' />
+                              <span id="opt1"></span>
+                           </label>
+                        </p>
+
+                        <p>
+                           <label>
+                              <input class="with-gap" name="group1" type="radio" value='option2' />
+                              <span id="opt2"></span>
+                           </label>
+                        </p>
+
+                        <p>
+                           <label>
+                              <input class="with-gap" name="group1" type="radio" value='option3' />
+                              <span id="opt3"></span>
+                           </label>
+                        </p>
+
+                        <p>
+                           <label>
+                              <input class="with-gap" name="group1" type="radio" value='option4' />
+                              <span id="opt4"></span>
+                           </label>
+                        </p>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="submit" class="col s12 btn-large waves-effect waves-dark orange black-text" value="submit">
+            Check Results
+         </div>
+
+         <div id="result" class="container result card-panel grey" style="width: 100%;">
+            <p href="#!" class="white-text center">
+            
+            </p>
+         </div>
+
+      </div>
+   </div>
+
+
+
+
+
+
+   <!-- SCRIPTS -->
+
+   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script type="text/javascript" src='questions.js'></script>
+   <script type="text/javascript" src='app.js'></script>
+
+   <!-- SCRIPTS END-->
+
+</body>
+
+</html>
